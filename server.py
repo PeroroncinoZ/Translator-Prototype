@@ -14,6 +14,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
 client = OpenAI(api_key=OPENAI_API_KEY)
 
+
 # Set the upload and download folders
 app.config['UPLOAD_FOLDER'] = './Audio'
 app.config['DOWNLOAD_FOLDER'] = './Audio'
